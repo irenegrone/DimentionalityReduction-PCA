@@ -1,0 +1,7 @@
+# checkpoint
+*.ipynb_checkpoints
+*.log
+
+
+# files
+pulsar_stars.csv
