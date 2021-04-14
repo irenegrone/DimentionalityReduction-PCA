@@ -2,7 +2,7 @@
 *.ipynb_checkpoints
 *.log
 
-
 # files
 data/
 pulsar_stars.csv
+*.html
