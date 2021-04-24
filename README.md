@@ -1,10 +1,12 @@
 <h2>Dimensionality-Reduction</h2>
 
-<p>The repository includes a demonstration an application of Principal Component Analysis (PCA) for dimentionality reduction. It extend a project undertaken during the MSc Data Science</p>
+<p>The repository includes a demonstration an application of Principal Component Analysis (PCA) for dimentionality reduction. It extends a project undertaken during the MSc Data Science</p>
 
-<p>Dataset description:<br>
+<p>Dataset<br>
 <b>HTRU2</b> on UCI Machine Learning Repository <a href="https://archive.ics.uci.edu/ml/datasets/HTRU2">https://archive.ics.uci.edu/ml/datasets/HTRU2</a> donate on 14/02/2017<br>
-Dr Robert Lyon, University of Manchester, School of Physics and Astronomy, Alan Turing Building, Manchester M13 9PL, United Kingdom, robert.lyon '@' manchester.ac.uk</p>
+Dr Robert Lyon, University of Manchester, School of Physics and Astronomy, Alan Turing Building, Manchester M13 9PL, United Kingdom, robert.lyon '@' manchester.ac.uk<br>
+The dataset has been chosen small to ease the computation and the demonstration, PCA is a techniques that is effective on high dimentional dataset.</p>
+
 
 <p>References<br>
 R. J. Lyon, B. W. Stappers, S. Cooper, J. M. Brooke, J. D. Knowles, Fifty Years of Pulsar Candidate Selection: From simple filters to a new principled real-time classification approach, Monthly Notices of the Royal Astronomical Society 459 (1), 1104-1123, DOI: 10.1093/mnras/stw656<br>
