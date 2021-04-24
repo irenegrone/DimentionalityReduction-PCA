@@ -1,20 +1,22 @@
-## PCA and Dimentionality reduction
-## Irene Grone   
+## Dimentionality reduction - PCA
+## Irene Grone
 
 ## initial import
 import numpy as np
 import pandas as pd
 import random as rnd
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 sns.set()
-
+from matplotlib import cm
+from mpl_toolkits.mplot3d import Axes3D
 from sklearn import preprocessing
 from sklearn.decomposition import PCA
 
+
 ## load data
 pulsar = pd.read_csv('pulsar_stars.csv')
+
 
 ## renaming the features for readability
 features_names = ["mean_integrated", "std_integrated", "exKurt_integrated", "skewness_integrated", "mean_DM-SNR", "std_DM-SNR", "exKurt_DM-SNR", "skewness_DM-SNR", "target"]
@@ -26,24 +28,26 @@ g = sns.pairplot(pulsar, hue="target")
 plt.show()
 input("press key to continue")
 
+
 ## separate features and target
 X_pulsar = pulsar.iloc[:, :8]
 y_pulsar = pulsar['target']
 features_sc = ["mean_integrated", "std_integrated", "exKurt_integrated", "skewness_integrated", "mean_DM-SNR", "std_DM-SNR", "exKurt_DM-SNR", "skewness_DM-SNR"]
+
 
 ## scaling the dataset
 X_scaled = preprocessing.scale(X_pulsar)
 X_scaled = pd.DataFrame(X_scaled)
 X_scaled.columns = features_sc
 
+
 ## pariplot of the scaled dataset
 g2 = sns.pairplot(X_scaled)
 plt.show()
 input("press key to continue")
 
-##3D plots for selecting the three predictors
-from matplotlib import cm
 
+##3D plots for selecting the three predictors
 fig = plt.figure(figsize=(30, 8))
 ax = fig.add_subplot(1, 4, 1, projection='3d')
 ax.scatter(X_scaled["exKurt_integrated"], X_scaled["skewness_DM-SNR"], X_scaled["exKurt_DM-SNR"], c=y_pulsar, cmap=cm.coolwarm)
@@ -80,9 +84,11 @@ input("press key to continue")
 ## selection of the predictor
 features = X_scaled[["skewness_integrated", "skewness_DM-SNR", "exKurt_DM-SNR"]]
 
+
 ## applying PCA
 pca = PCA(n_components = 2)
 X_reduced = pca.fit_transform(features)
+
 
 ## print of components and variance ratio
 print("PCA components")
@@ -90,7 +96,6 @@ print(pca.components_)
 print("variance explained")
 print(pca.explained_variance_ratio_)
 
-## 
 
 ## projection of dataset on the 3D space of selected predictors and on reduced space of PCs
 fig2 = plt.figure(figsize=(16, 8))
