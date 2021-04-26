@@ -1,4 +1,4 @@
-<h2>Dimensionality-Reduction</h2>
+<h2>PRincipal Component Analysis - PCA</h2>
 
 <h3>Objective</h3>
 <p>The repository includes a demonstration an application of Principal Component Analysis (PCA) for dimentionality reduction. It extends a project undertaken during the MSc Data Science</p>
