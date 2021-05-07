@@ -13,7 +13,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from sklearn import preprocessing
 from sklearn.decomposition import PCA
 
-## dowload original data from 
+## dowload original data from https://archive.ics.uci.edu/ml/datasets/HTRU2
 ## load data
 pulsar = pd.read_csv('data/pulsar_stars.csv')
 
