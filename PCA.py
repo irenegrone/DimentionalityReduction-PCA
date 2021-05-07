@@ -1,7 +1,7 @@
 ## Dimentionality reduction - PCA
 ## Irene Grone
 
-## initial import
+## standard import
 import numpy as np
 import pandas as pd
 import random as rnd
@@ -13,9 +13,9 @@ from mpl_toolkits.mplot3d import Axes3D
 from sklearn import preprocessing
 from sklearn.decomposition import PCA
 
-
+## dowload original data from 
 ## load data
-pulsar = pd.read_csv('pulsar_stars.csv')
+pulsar = pd.read_csv('data/pulsar_stars.csv')
 
 
 ## renaming the features for readability
@@ -23,7 +23,7 @@ features_names = ["mean_integrated", "std_integrated", "exKurt_integrated", "ske
 pulsar.columns = features_names
 
 
-## pariplot of the original dataset
+## pairplot of the original dataset
 g = sns.pairplot(pulsar, hue="target")
 plt.show()
 input("press key to continue")
