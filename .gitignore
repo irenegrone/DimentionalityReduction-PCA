@@ -3,6 +3,4 @@
 *.log
 
 # files
-data/
-*.csv
 *.html
