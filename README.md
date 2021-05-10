@@ -6,7 +6,7 @@
 <h3>Dataset</h3>
 <p><b>HTRU2</b> on UCI Machine Learning Repository <a href="https://archive.ics.uci.edu/ml/datasets/HTRU2">https://archive.ics.uci.edu/ml/datasets/HTRU2</a> donate on 14/02/2017<br>
 Dr Robert Lyon, University of Manchester, School of Physics and Astronomy, Alan Turing Building, Manchester M13 9PL, United Kingdom, robert.lyon '@' manchester.ac.uk</p>
-<p>The dataset has been chosen small to make easy the computation and the demonstration, PCA is a techniques that is effective on high dimentional dataset.</p>
+<p>Dowloaded February 2020. The dataset has been chosen small to make easy the computation and the demonstration, PCA is a techniques that is effective on high dimentional dataset.</p>
 
 
 <h3>References</h3>
