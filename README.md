@@ -1,7 +1,7 @@
 <h2>Principal Component Analysis - PCA</h2>
 
 <h3>Objective</h3>
-<p>The repository includes a demonstration an application of Principal Component Analysis (PCA) for dimentionality reduction. It extends a project undertaken during the MSc Data Science</p>
+<p>The repository includes a demonstration an application of Principal Component Analysis (PCA) for dimensionality reduction. It extends a project undertaken during the MSc Data Science</p>
 
 <h3>Dataset</h3>
 <p><b>HTRU2</b> on UCI Machine Learning Repository <a href="https://archive.ics.uci.edu/ml/datasets/HTRU2">https://archive.ics.uci.edu/ml/datasets/HTRU2</a> donate on 14/02/2017<br>
