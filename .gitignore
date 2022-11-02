@@ -4,3 +4,9 @@
 
 # files
 *.html
+
+# folders
+cache/*
+figure/*
+logs/*
+data/*
